@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
-import Signup from "./components/Signup";
+import Employee from "./components/Employee";
 import Computer from "./components/Computer";
 import CellPhone from "./components/CellPhone";
 
@@ -21,8 +21,8 @@ function App() {
           <CellPhone />
         </Route>
 
-        <Route path="/signup">
-          <Signup/>
+        <Route path="/employee">
+          <Employee/>
         </Route>
 
         <Route path="/*">

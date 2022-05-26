@@ -12,8 +12,8 @@ function NavBar() {
             <h3> Computer</h3>
         </Link>
         
-        <Link to="/signup">
-            <h3> Sign Up</h3>
+        <Link to="/employee">
+            <h3> Employee</h3>
         </Link>
     </div>
     </>
