@@ -2,22 +2,22 @@
     "users":[
         {
             "id": 1,
-            "Name": "dummy account",
-            "Department": "IT",
-            "Manager": "Dummy Mgr",
-            "Title": "IT Help Desk",
-            "Phone#": "555-555-5555"
+            "name": "dummy account",
+            "department": "IT",
+            "manager": "Dummy Mgr",
+            "title": "IT Help Desk",
+            "phone#": "555-555-5555"
         }
     ],
     "tickets":[
         {
             "id": 1,
-            "Computer / phone": "",
-            "Problem type":"",
-            "Description": "",
-            "Tech":"", 
-            "Solution": "",
-            "Status": ""
+            "computer / phone": "",
+            "problem type":"",
+            "description": "",
+            "tech":"", 
+            "solution": "",
+            "status": ""
         }
     ]
 
