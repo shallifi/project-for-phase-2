@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+
 
  const formStyle = {
   display: "flex",
@@ -20,41 +23,70 @@ const textArea = {
 }
 
 
-function Employee() {
+function Employee({users}) {
   
+  const [formData, setFormData] = useState ({
+    
+    name:"",
+    department:"", 
+    manager: "",
+    title: "",
+    phone: ""
+  })
   
+  ///onChange on every input
+
+  ///handleChange 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((formData) => ({ ...formData, [name]: value }));
+  };
+
+//value property on every input = formData.------
+
+  console.log(formData) 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const configObj = {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Accept: "application/json",
-    //   },
-    //   body: JSON.stringify({ ...formData, }),
-    // };
-    fetch(`http://localhost:3000/users`)
+  }
+    const configObj = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({ ...formData }),
+    };
+    fetch(`http://localhost:3000/users`, configObj)
       .then((resp) => resp.json())
       .then((data) => {console.log(data)})
-        // onAddProject(project);
-        // setFormData({
-        //   name: "",
-        //   about: "",
-        //   phase: "",
-        //   link: "",
-        //   image: "",
+    
+        onAddUser(project);
+        setFormData({
+          name: "",
+          about: "",
+          phase: "",
+          link: "",
+          image: "",
+        })
         
       
   
 
 
-  }
+  
 
   return (
-    <form style={formStyle} onSubmit={handleSubmit} >
+    <form style={formStyle}  onSubmit={handleSubmit}>
     <div>
       Employee Name
-      <input type="text" style={textArea} name="Name of New Employee" placeholder="First and Last Name"/>
+      <input type="text" 
+      style={textArea} 
+      name="name" 
+      placeholder="First and Last Name"
+      onChange={handleChange}
+      />
+
       Department
       <input type="text" style={textArea} name="department" placeholder="dept"/>
       Manager
@@ -62,7 +94,7 @@ function Employee() {
       Title
       <input type="text" style={textArea} name="title" placeholder="position / title"/>
       Phone#
-      <input type="text" style={textArea} name="phone#" placeholder="###-###-####"/>
+      <input type="text" style={textArea} name="phone" placeholder="###-###-####"/>
       <button type="submit">Submit New Employee Information</button>
 
       </div>

@@ -11,6 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  color: var(--color);
+  background-color: var(--background);
+  min-height: 100vh;
+}
 
 .nav {
   padding: 20px;

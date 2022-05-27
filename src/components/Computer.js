@@ -40,7 +40,7 @@ function Computer({onAddTicket}) {
       
       
       
-      <select className='drop-menu'>
+       Common Issues<select className='drop-menu'>
         <option value="password">Password</option>
         <option value="printer">Printer</option>
         <option selected value="connection">Connection</option>
