@@ -1,10 +1,14 @@
-import React from 'react'
+import { useState } from "react";
+
+
 
 function UserList() {
+
+    const [newUserListItem, setNewUserListItem] = useState({})
     
     
     const onAddUser = (newUser) => {
-        setProjects((projects) => [...projects, newProj]);
+        setNewUserListItem((newUserListItem) => [...newUserListItem, newUser]);
       };
     
     // /this fetch works to Get data
@@ -12,7 +16,10 @@ function UserList() {
     //   .then((resp) => resp.json())
     //   .then((data) => {console.log(data)})
   return (
-    <div>UserList</div>
+    <div>
+        UserList
+        
+    </div>
   )
 }
 

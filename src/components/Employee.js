@@ -1,4 +1,5 @@
 import { useState } from "react";
+import UserList from "./UserList";
 
 
 
@@ -23,8 +24,9 @@ const textArea = {
 }
 
 
-function Employee({users}) {
+function Employee({onAddUser}) {
   
+  /// used for controled form vvvvvv
   const [formData, setFormData] = useState ({
     
     name:"",
@@ -34,7 +36,7 @@ function Employee({users}) {
     phone: ""
   })
   
-  ///onChange on every input
+ 
 
   ///handleChange 
   const handleChange = (e) => {
@@ -42,6 +44,7 @@ function Employee({users}) {
     setFormData((formData) => ({ ...formData, [name]: value }));
   };
 
+   ///onChange on every input
 //value property on every input = formData.------
 
   console.log(formData) 
@@ -59,21 +62,16 @@ function Employee({users}) {
     };
     fetch(`http://localhost:3000/users`, configObj)
       .then((resp) => resp.json())
-      .then((data) => {console.log(data)})
-    
-        onAddUser(project);
+      .then((userBlah) => {
+        onAddUser(userBlah);
         setFormData({
-          name: "",
-          about: "",
-          phase: "",
-          link: "",
-          image: "",
-        })
-        
-      
-  
-
-
+          name:"",
+          department:"", 
+          manager: "",
+          title: "",
+          phone: ""
+        });
+      });
   
 
   return (
@@ -85,16 +83,41 @@ function Employee({users}) {
       name="name" 
       placeholder="First and Last Name"
       onChange={handleChange}
+      value={formData.name}
       />
-
+      
       Department
-      <input type="text" style={textArea} name="department" placeholder="dept"/>
+      <input type="text" 
+      style={textArea} 
+      name="department" 
+      placeholder="dept"
+      onChange={handleChange}
+      value={formData.department}/>
+
       Manager
-      <input type="text" style={textArea} name="manager" placeholder="direct supervisor"/>      
+      <input type="text" 
+      style={textArea} 
+      name="manager" 
+      placeholder="direct supervisor"
+      onChange={handleChange}
+      value={formData.manager}/> 
+
       Title
-      <input type="text" style={textArea} name="title" placeholder="position / title"/>
+      <input type="text" 
+      style={textArea} 
+      name="title" 
+      placeholder="position / title"
+      onChange={handleChange}
+      value={formData.title}/>
+
       Phone#
-      <input type="text" style={textArea} name="phone" placeholder="###-###-####"/>
+      <input type="text" 
+      style={textArea} 
+      name="phone" 
+      placeholder="###-###-####"
+      onChange={handleChange}
+      value={formData.phone}/>
+
       <button type="submit">Submit New Employee Information</button>
 
       </div>
