@@ -2,15 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 // import { Link } from 'react-router-dom'
 
-const boxButtonStyle = {
-  display: "inline-block",
-  width: "150px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
-  textDecoration: "none",
-  color: "white",
-};
+
 
 function NavBar() {
   return (
@@ -24,15 +16,32 @@ function NavBar() {
             <h3> Add Ticket</h3>
         </NavLink>
         
-        <NavLink to="/employee"
-        exact style={boxButtonStyle} 
+        <NavLink exact to="/employee"
+        style={boxButtonStyle} 
         activeStyle={{ background: "darkblue", }}
         >
             <h3> Add Employee</h3>
+        </NavLink>
+        
+        <NavLink exact to="/employee/new"
+        style={boxButtonStyle} 
+        activeStyle={{ background: "darkblue", }}
+        >
+            <h3>Employee List</h3>
         </NavLink>
     </div>
     </>
   )
 }
 
-export default NavBar
+export default NavBar;
+
+const boxButtonStyle = {
+  display: "inline-block",
+  width: "150px",
+  padding: "12px",
+  margin: "0 6px 6px",
+  background: "blue",
+  textDecoration: "none",
+  color: "white",
+};

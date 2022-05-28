@@ -7,6 +7,30 @@
       "manager": "Dummy Mgr",
       "title": "IT Help Desk",
       "phone": "555-555-5555"
+    },
+    {
+      "name": "Jimmy",
+      "department": "fire",
+      "manager": "Nancy",
+      "title": "machine tech",
+      "phone": "123",
+      "id": 2
+    },
+    {
+      "name": "another",
+      "department": "outside",
+      "manager": "shel",
+      "title": "hacker",
+      "phone": "non",
+      "id": 3
+    },
+    {
+      "name": "Neb",
+      "department": "fire",
+      "manager": "Dave",
+      "title": "sadfasdfa",
+      "phone": "asfdsaf",
+      "id": 4
     }
   ],
   "tickets": [

@@ -1,24 +1,5 @@
 import React from 'react'
 
- const formStyle = {
-  display: "flex",
-  flex : "column",
-  width: "500px",
-  margin: "0 auto",
-  border: "2px solid var(--dark-turquoise)",
-  padding: "1.75rem"
-}
-
-const textArea = {
-  margintop: "0.25rem",
-  marginbottom: "1rem",
-  padding: "0.5rem",
-  border: "none",
-  fontsize: "1.25rem",
-  fontweight: "bold",
-  transition: "all 0.3s",
-  border: "2px solid var(--color)",
-}
 
 function Computer({onAddTicket}) {
 
@@ -51,4 +32,24 @@ function Computer({onAddTicket}) {
   )
 }
 
-export default Computer
+export default Computer;
+
+const formStyle = {
+  display: "flex",
+  flex : "column",
+  width: "500px",
+  margin: "0 auto",
+  border: "2px solid var(--dark-turquoise)",
+  padding: "1.75rem"
+}
+
+const textArea = {
+  margintop: "0.25rem",
+  marginbottom: "1rem",
+  padding: "0.5rem",
+  border: "none",
+  fontsize: "1.25rem",
+  fontweight: "bold",
+  transition: "all 0.3s",
+  border: "2px solid var(--color)",
+}
