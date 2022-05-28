@@ -23,8 +23,16 @@ function UserList() {
     //   };  
     
     console.log("useEffect working", employee)
-    const displayEmploy = employee.map((empBlasted) => {
-        return <h3 key={empBlasted.department}>{empBlasted.department}</h3>; 
+    const displayEmploy = employee.map((empShown) => {
+        return <p 
+          key={empShown.id}>
+          {empShown.name},
+          {empShown.department},
+          {empShown.manager},
+          {empShown.title},
+          {empShown.phone}
+
+          </p>; 
       });
       console.log("displayEmploy",displayEmploy)
 ///////////////
@@ -47,9 +55,11 @@ return (
     <div className="emp-list">
 
         <h1>UserList</h1>
+          {displayEmploy}
+          <ul>
+          </ul>
          
         <h2>
-          {displayEmploy}
           {/* {awesome} */}
           {/* {employee.department.map((dept)=>
           <li key={dept}>{dept}</li>)} */}

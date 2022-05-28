@@ -5,17 +5,26 @@ import AddEmployee from "./components/AddEmployee";
 import Computer from "./components/Computer";
 import CellPhone from "./components/CellPhone";
 import UserList from "./components/UserList";
+import TicketList from "./components/TicketList";
+import { Link } from "react-router-dom";
+
 
 
 
 function App() {
   return (
     <div>
-      <h1>IT Help Desk Ticket System</h1>
+      <Link exact to="/" style={{border:"red"}}>
+      <h1 className="ithds-header">IT Help Desk Ticket System</h1>
+      </Link>
       <NavBar/>
         <Switch>
           <Route path="/computer">
             <Computer />
+          </Route>
+
+          <Route path="/ticketlist">
+            <TicketList />
           </Route>
           
           <Route path="/cellphone">
@@ -35,6 +44,10 @@ function App() {
           </Route>
 
         </Switch>
+        {/* giving credit to artist is below if publishing app  */}
+        {/* <footer>
+          <a href="https://www.freepik.com/vectors/data-background">Data background vector created by starline - www.freepik.com</a>
+        </footer> */}
     </div>
   );
 }

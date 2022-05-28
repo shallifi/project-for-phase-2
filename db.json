@@ -31,13 +31,21 @@
       "title": "sadfasdfa",
       "phone": "asfdsaf",
       "id": 4
+    },
+    {
+      "name": "Daovone",
+      "department": "Operations",
+      "manager": "Peing Chanthapasuet",
+      "title": "CEO",
+      "phone": "unlisted",
+      "id": 5
     }
   ],
   "tickets": [
     {
       "id": 1,
-      "computer / phone": "",
-      "problem type": "",
+      "device": "",
+      "problem": "",
       "description": "",
       "tech": "",
       "solution": "",

@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("tech background.jpg");
+  background-size:cover;
+  background-position: top;
+  background:cover;
+
+  ;
 }
 
 code {
@@ -15,6 +21,15 @@ code {
   color: var(--color);
   background-color: var(--background);
   min-height: 100vh;
+}
+.App.light {
+  --color: var(--black);
+  --background: var(--white);
+  --primary: var(--dark-turquoise);
+}
+/* for the IT Help Desk title */
+.ithds-header{
+
 }
 
 .nav {
@@ -40,6 +55,10 @@ code {
   list-style: none;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(px, 1fr));
   gap: 1.5rem;
+}
+
+.ticket-form {
+
 }

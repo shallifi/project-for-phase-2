@@ -12,20 +12,25 @@ function NavBar() {
         
         <NavLink to="/computer" 
         exact style={boxButtonStyle} 
-        activeStyle={{ background: "darkblue", }}>
+        activeStyle={{ background: "darkgreen", }}>
             <h3> Add Ticket</h3>
+        </NavLink>
+        <NavLink to="/ticketlist" 
+        exact style={boxButtonStyle} 
+        activeStyle={{ background: "darkgreen", }}>
+            <h3> Ticket List</h3>
         </NavLink>
         
         <NavLink exact to="/employee"
         style={boxButtonStyle} 
-        activeStyle={{ background: "darkblue", }}
+        activeStyle={{ background: "darkgreen", }}
         >
             <h3> Add Employee</h3>
         </NavLink>
         
         <NavLink exact to="/employee/new"
         style={boxButtonStyle} 
-        activeStyle={{ background: "darkblue", }}
+        activeStyle={{ background: "darkgreen", }}
         >
             <h3>Employee List</h3>
         </NavLink>

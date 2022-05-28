@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
+
 
 
 function Computer({onAddTicket}) {
 
-  // const 
+  ///setting a controlled form by using useState
+  const [tickData,setTickData] = useState({
+
+    device:"",
+    problem:"" ,
+    description:"" ,
+    tech:"" ,
+    solution:"" ,
+    status: ""
+
+  })
+
+  //history to navigate to TicketList
+  const history = useHistory();
+
+
 
   return (
     <section>
