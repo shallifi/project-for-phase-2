@@ -8,6 +8,7 @@ function UserList() {
   
   // const {name, department, manager, title, phone } = employee;
     // console.log("userList",formData)
+
     //useEffect renders once per loading the page
     useEffect(() => {
         fetch(`http://localhost:3000/users`)
@@ -21,18 +22,18 @@ function UserList() {
     //     setNewUserListItem((newUserListItem) => [...newUserListItem, newUser]);
     //   };  
     
-    console.log("userlistagain", employee)
-    // function displayEmploy()
-    // { employee.map((empBlasted) => {
-    //     return <h1 key={empBlasted.id}>{empBlasted.department}</h1>; 
-    //   })};
+    console.log("useEffect working", employee)
+    const displayEmploy = employee.map((empBlasted) => {
+        return <h3 key={empBlasted.department}>{empBlasted.department}</h3>; 
+      });
+      console.log("displayEmploy",displayEmploy)
 ///////////////
-    const awesome = employee.map((emplStats) => (
-      <li key={emplStats.id}
-      emplStats={emplStats}>
-      </li>))      
+    // const awesome = employee.map((emplStats) => (
+    //   <li key={emplStats.id}
+    //   emplStats={emplStats}>
+    //   </li>))      
 
-    console.log("trying to get",awesome)
+    // console.log("trying to get",awesome)
 
     //  function displayEmp() {
     //    return employee.map((emplStats) => (
@@ -46,15 +47,17 @@ return (
     <div className="emp-list">
 
         <h1>UserList</h1>
-         {/* {displayEmp()}  */}
+         
         <h2>
-          {awesome}
-          {employee.department}
+          {displayEmploy}
+          {/* {awesome} */}
+          {/* {employee.department.map((dept)=>
+          <li key={dept}>{dept}</li>)} */}
             areas dous
         </h2>
     
      
-        <ul className="emp-list">{employee}</ul>
+        {/* <ul className="emp-list">{employee}</ul> */}
     </div>
   )
 }
