@@ -7,6 +7,7 @@ import CellPhone from "./components/CellPhone";
 import UserList from "./components/UserList";
 import TicketList from "./components/TicketList";
 import { Link } from "react-router-dom";
+import Restart from "./components/Restart";
 
 
 
@@ -39,6 +40,10 @@ function App() {
               <UserList/>
           </Route>
 
+          <Route path="/restart">
+            <Restart/>
+          </Route>
+          
           <Route path="/*">
             <NotFound/>
           </Route>

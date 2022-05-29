@@ -58,42 +58,42 @@ function Employee({onAddUser}) {
   return (
     <form style={formStyle}  onSubmit={handleSubmit}>
     <div>
-        Employee Name
+        <h2>Employee Name</h2>
         <input type="text" 
-        style={textArea} 
+        style={formStyle} 
         name="name" 
         placeholder="First and Last Name"
         onChange={handleChange}
         value={formData.name}
         />
         
-        Department
+        <h2>Department</h2>
         <input type="text" 
-        style={textArea} 
+        style={formStyle} 
         name="department" 
         placeholder="dept"
         onChange={handleChange}
         value={formData.department}/>
 
-        Manager
+        <h2>Manager</h2>
         <input type="text" 
-        style={textArea} 
+        style={formStyle} 
         name="manager" 
         placeholder="direct supervisor"
         onChange={handleChange}
         value={formData.manager}/> 
 
-        Title
+        <h2>Title</h2>
         <input type="text" 
-        style={textArea} 
+        style={formStyle} 
         name="title" 
         placeholder="position / title"
         onChange={handleChange}
         value={formData.title}/>
 
-        Phone#
+        <h2>Phone#</h2>
         <input type="text" 
-        style={textArea} 
+        style={formStyle} 
         name="phone" 
         placeholder="###-###-####"
         onChange={handleChange}
@@ -114,7 +114,16 @@ const formStyle = {
   width: "500px",
   margin: "0 auto",
   border: "2px solid var(--dark-turquoise)",
-  padding: "1.75rem"
+  padding: "1.75rem",
+  margintop: "0.25rem",
+  marginbottom: "1rem",
+  padding: "0.5rem",
+  border: "none",
+  fontsize: "1.25rem",
+  fontweight: "bold",
+  transition: "all 0.3s",
+  border: "2px solid var(--color)",
+  // color:"black"
 }
 
 const textArea = {
@@ -126,4 +135,5 @@ const textArea = {
   fontweight: "bold",
   transition: "all 0.3s",
   border: "2px solid var(--color)",
+
 }

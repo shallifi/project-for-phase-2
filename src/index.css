@@ -9,6 +9,7 @@ body {
   background-size:cover;
   background-position: top;
   background:cover;
+  color: white;
 
   ;
 }
@@ -51,12 +52,28 @@ code {
 }
 
 .emp-list {
-  margin: 0 auto;
+  /* margin: 0 auto;
   list-style: none;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(px, 1fr));
   gap: 1.5rem;
+  color:white;
+  display: flex;
+  flex-wrap: wrap; */
+  /* flex-direction: column; */
+  /* display: block; */
+  /* display: inline; */
+  /* display: inline-block; */
+  /* display: flex; */
+  /* display: inline-flex; */
+  /* display: grid; */
+  /* display: inline-grid; */
+  /* display: flow-root; */
+}
+
+h2 {
+  color: white;
 }
 
 .ticket-form {

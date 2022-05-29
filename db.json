@@ -39,6 +39,14 @@
       "title": "CEO",
       "phone": "unlisted",
       "id": 5
+    },
+    {
+      "name": "Jimmy Chanthapaseut",
+      "department": "Instrumentation",
+      "manager": "Nancy Ch",
+      "title": "Baller",
+      "phone": "nonya",
+      "id": 6
     }
   ],
   "tickets": [

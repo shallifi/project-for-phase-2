@@ -52,18 +52,18 @@ function UserList() {
     //  } 
 
 return (
-    <div className="emp-list">
+    <div >
 
         <h1>UserList</h1>
+          <ul className="emp-list">
           {displayEmploy}
-          <ul>
           </ul>
          
         <h2>
           {/* {awesome} */}
           {/* {employee.department.map((dept)=>
           <li key={dept}>{dept}</li>)} */}
-            areas dous
+           
         </h2>
     
      

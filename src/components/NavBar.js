@@ -10,6 +10,12 @@ function NavBar() {
     <div className="nav">
         <h3 className="project-title">NavBar</h3>
         
+
+        <NavLink to="/restart" 
+        exact style={boxButtonStyle} 
+        activeStyle={{ background: "darkgreen", }}>
+            <h3> Did you Restart?</h3>
+          </NavLink>
         <NavLink to="/computer" 
         exact style={boxButtonStyle} 
         activeStyle={{ background: "darkgreen", }}>
