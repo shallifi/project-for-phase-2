@@ -2,7 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import AddEmployee from "./components/AddEmployee";
-import Computer from "./components/Computer";
+import AddTicket from "./components/AddTicket";
 import CellPhone from "./components/CellPhone";
 import UserList from "./components/UserList";
 import TicketList from "./components/TicketList";
@@ -21,7 +21,7 @@ function App() {
       <NavBar/>
         <Switch>
           <Route path="/computer">
-            <Computer />
+            <AddTicket />
           </Route>
 
           <Route path="/ticketlist">

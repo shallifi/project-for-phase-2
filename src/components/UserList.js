@@ -3,6 +3,7 @@ import AddEmployee from "react";
 
 
 
+
 function UserList() {
   const [employee, setEmployee] = useState([])
   
@@ -24,12 +25,17 @@ function UserList() {
     
     console.log("useEffect working", employee)
     const displayEmploy = employee.map((empShown) => {
-        return <p 
+        return <p className="emp-list" 
           key={empShown.id}>
+          {/* <h4>Name:</h4> */}
           {empShown.name},
+          {/* <h4>Department:</h4> */}
           {empShown.department},
+          {/* <h4>Manager:</h4> */}
           {empShown.manager},
+          {/* <h4>Title:</h4> */}
           {empShown.title},
+          {/* <h4>Phone:</h4> */}
           {empShown.phone}
 
           </p>; 
@@ -55,7 +61,7 @@ return (
     <div >
 
         <h1>UserList</h1>
-          <ul className="emp-list">
+          <ul>
           {displayEmploy}
           </ul>
          

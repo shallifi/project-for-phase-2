@@ -52,15 +52,17 @@ code {
 }
 
 .emp-list {
-  /* margin: 0 auto;
-  list-style: none;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(px, 1fr));
-  gap: 1.5rem;
-  color:white;
+  /* margin: 0 auto; */
+  /* list-style: none; */
+  /* width: 100%; */
   display: flex;
-  flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  /* grid-template-columns: repeat(auto-fill, minmax(px, 1fr)); */
+  /* gap: 1.5rem; */
+  /* color:white; */
+  /* display:column; */
+  /* flex-wrap: wrap; */
   /* flex-direction: column; */
   /* display: block; */
   /* display: inline; */
@@ -79,3 +81,31 @@ h2 {
 .ticket-form {
 
 }
+
+button.active,
+button:focus,
+button:hover {
+  color: red;
+  background-color: orange;
+  
+}
+
+.ticket-form {
+  /* display: flex;
+  width: "500px";
+  margin: "0 auto";
+  border: "2px solid var(--dark-turquoise)";
+  padding: "1.75rem";
+  margin-top: "0.25rem";
+  margin-bottom: "1rem";
+  padding: "0.5rem";
+  border: "none";
+  font-size: "1.25rem";
+  font-weight: "bold";
+  transition: "all 0.3s";
+  border: "2px solid var(--color)";
+  color:"black" */
+}
+
+
+

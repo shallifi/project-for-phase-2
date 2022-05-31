@@ -47,6 +47,14 @@
       "title": "Baller",
       "phone": "nonya",
       "id": 6
+    },
+    {
+      "name": "Leander Howe",
+      "department": "ABC 123 Department",
+      "manager": "Dad",
+      "title": "Superhero LH",
+      "phone": "555-555-5551",
+      "id": 7
     }
   ],
   "tickets": [
@@ -58,6 +66,35 @@
       "tech": "",
       "solution": "",
       "status": ""
+    },
+    {
+      "device": "",
+      "problem": "",
+      "description": "",
+      "tech": "",
+      "solution": "",
+      "status": "",
+      "id": 2
+    },
+    {
+      "device": "",
+      "problem": "",
+      "description": "Test Mctestf",
+      "tech": "",
+      "solution": "",
+      "status": "",
+      "name": "Test Mctest",
+      "id": 3
+    },
+    {
+      "device": "",
+      "problem": "",
+      "description": "I was trying to type in here for testing purposes.",
+      "tech": "",
+      "solution": "",
+      "status": "",
+      "name": "Ronald McDonald",
+      "id": 4
     }
   ]
 }

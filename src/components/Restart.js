@@ -1,8 +1,18 @@
 import React from 'react'
 
+
+function handleClick(){
+
+}
+
+
 function Restart() {
   return (
-    <div>Restart</div>
+    <div>
+      <button className='button' onClick={handleClick}>Yes</button>
+      Restart
+      
+    </div>
   )
 }
 
